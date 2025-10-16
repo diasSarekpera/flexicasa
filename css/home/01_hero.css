@@ -249,7 +249,7 @@
 /* Titre principal */
 .hero-title{
     font-family: 'Marcellus', sans-serif;
-    font-size: clamp(3.7rem, 4vw, 6rem);
+    font-size: clamp(3.5rem, 4vw, 6rem);
     font-weight: 700;
     letter-spacing: 2px;
     text-transform: uppercase;
@@ -334,6 +334,7 @@
 @media (min-width: 901px){
     .menu-burger{ display: none; } /* ensure burger hidden on desktop */
 }
+
 
 
 
