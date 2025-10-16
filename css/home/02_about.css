@@ -95,7 +95,7 @@
   color: rgba(35, 35, 35, 0.85);
   font-family: 'Inter', sans-serif;
   transition: color 0.3s ease;
-   justify: left;
+  text-align: justify;
 }
 
 .about-text strong {
@@ -399,6 +399,3 @@
     animation: fadeUp 0.9s ease both;
   }
 }
-
-
-
