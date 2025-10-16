@@ -1,0 +1,13 @@
+:root {
+  /* Couleurs principales */
+  --color-primary: #2a4dbd;    /* Bleu royal - éléments dominants */
+  --color-secondary: #fda12b;  /* Orange doré - accents et CTA */
+
+  /* Couleurs neutres */
+  --color-dark: #1e1e1e;       /* Charcoal - texte et fonds sombres */
+  --color-light: #f5f5f5;      /* Gris clair - fonds de sections */
+  --color-white: #ffffff;      /* Blanc pur - contraste */
+}
+
+
+
