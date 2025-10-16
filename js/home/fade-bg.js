@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // 🔁 Images (remplace par tes chemins corrects)
   const IMAGES = [
-    "./assets/images/01-hero/bg1.jpg",
-    "./assets/images/01-hero/bg2.jpg",
-    "./assets/images/01-hero/bg3.jpg",
+    "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&w=1920&q=80",
+    "https://images.unsplash.com/photo-1580587771525-78b9dba3b914?auto=format&fit=crop&w=1920&q=80"
   ];
 
   const DURATION = 10000; // 10s (mets 30000 pour 30s)
