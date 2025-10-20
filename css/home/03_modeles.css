@@ -1,0 +1,376 @@
+/* ================================================
+   SECTION : NOS MODÈLES — Design Premium
+================================================= */
+
+:root {
+  --accent-1: #2a4dbd;
+  --accent-2: #6f86ff;
+  --warm: #fcb845;
+  --bg-light: #f8faff;
+  --text-dark: #0a1128;
+  --text-soft: #4b5563;
+  --card-radius: 1.3rem;
+  --shadow-soft: 0 10px 30px rgba(0, 0, 0, 0.06);
+  --shadow-hover: 0 20px 40px rgba(0, 0, 0, 0.08);
+  --max-width: 1200px;
+  --transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* ================================================
+   SECTION
+================================================= */
+.models-section {
+  background: linear-gradient(135deg, #f7f9fc 0%, #eef2ff 100%);
+  padding: 6rem 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.models-section::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(700px 400px at 20% 20%, rgba(42, 77, 189, 0.07), transparent 60%),
+    radial-gradient(600px 350px at 85% 70%, rgba(111, 134, 255, 0.06), transparent 60%);
+  z-index: 0;
+}
+
+.models-section .container {
+  position: relative;
+  z-index: 1;
+  max-width: var(--max-width);
+  margin: 0 auto;
+}
+
+/* ================================================
+   HEADER
+================================================= */
+.models-header {
+  text-align: center;
+  margin-bottom: clamp(2.5rem, 6vw, 5rem);
+}
+
+.models-header h2 {
+  font-family: "Marcellus", serif;
+  font-weight: 600;
+  font-size: clamp(2.2rem, 4vw, 3rem);
+  color: var(--text-dark);
+  position: relative;
+  display: inline-block;
+}
+
+.models-header h2::after {
+  content: "";
+  display: block;
+  height: 4px;
+  width: 7rem;
+  margin: 1rem auto 0;
+  border-radius: 6px;
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  opacity: 0.9;
+}
+
+/* ================================================
+   CATEGORY TITLES
+================================================= */
+.model-category {
+  margin-bottom: clamp(3rem, 5vw, 5.5rem);
+  font-family: "Marcellus", serif;
+}
+
+.category-title {
+  font-size: clamp(1.4rem, 2vw, 1.8rem);
+  text-align: center;
+  color: var(--text-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 2rem;
+}
+
+.category-title i {
+  color: var(--accent-1);
+  font-size: 1.25rem;
+}
+
+/* ================================================
+   GRID
+================================================= */
+.models-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 1.8rem;
+}
+
+/* ================================================
+   CARD PREMIUM
+================================================= */
+.model-card {
+	font-family: "Lato", serif;
+  position: relative;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+  backdrop-filter: blur(10px) saturate(180%);
+}
+
+.model-card:hover {
+  transform: translateY(-6px);
+  box-shadow: var(--shadow-hover);
+}
+
+/* Image */
+.model-image {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 1rem;
+  transition: var(--transition);
+}
+
+.model-card:hover .model-image {
+  transform: scale(1.03);
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(135deg, #ff7e29, #ffb347);
+  color: #fff;
+  padding: 0.4rem 0.8rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  letter-spacing: 0.02em;
+  box-shadow: 0 3px 8px rgba(42, 77, 189, 0.3);
+  z-index: 2;
+}
+
+.card-info{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 100%;
+	padding: 0.5rem;
+	gap: 0.5rem;
+}
+
+/* Texte */
+.model-name {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-dark);
+  margin-top: 0.8rem;
+  line-height: 1.3;
+}
+
+.model-desc {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.55;
+  flex-grow: 1;
+}
+
+/* Footer */
+.model-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+  padding-top: 0.8rem;
+  margin-top: 0.5rem;
+  width: 100%;
+}
+
+.model-price {
+  font-weight: 600;
+  color: var(--accent-1);
+  font-size: 1.05rem;
+}
+
+.model-price .old-price {
+  color: #9ca3af;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  margin-right: 0.4rem;
+}
+
+/* Bouton */
+.btn-details {
+  background: linear-gradient(90deg, var(--accent-1), var(--accent-2));
+  background: linear-gradient(135deg, #ff7e29, #ffb347);
+  color: #fff;
+  padding: 0.45rem 1.1rem;
+  border-radius: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-decoration: none;
+  transition: var(--transition);
+}
+
+.btn-details:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff7e29, #ffb347);
+}
+
+
+/* ======================================================
+   DESIGN PREMIUM DES CARTES (Version Améliorée)
+====================================================== */
+
+.model-card {
+  font-family: "Lato", sans-serif;
+  position: relative;
+  background: rgba(255, 255, 255, 0.75);
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: var(--transition);
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(12px) saturate(180%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.model-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Image */
+.model-image {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  border-radius: 0.8rem;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.model-card:hover .model-image {
+  transform: scale(1.06);
+  opacity: 0.95;
+}
+
+
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  background: linear-gradient(135deg, #ff8c42, #ffb84d);
+  color: #fff;
+  padding: 0.45rem 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  border-radius: 0.6rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 3px 10px rgba(255, 126, 41, 0.4);
+  z-index: 2;
+}
+
+/* Contenu */
+.card-info {
+  padding: 1.2rem 1.3rem 1.4rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+/* Titre */
+.model-name {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--text-dark);
+  line-height: 1.4;
+}
+
+/* Description */
+.model-desc {
+  color: var(--text-soft);
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+/* Footer */
+.model-footer {
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Prix */
+.model-price {
+  font-weight: 700;
+  color: var(--accent-1);
+  font-size: 1.05rem;
+}
+
+.model-price .old-price {
+  color: #a1a1aa;
+  font-size: 0.9rem;
+  text-decoration: line-through;
+  margin-right: 0.4rem;
+}
+
+/* Bouton */
+.btn-details {
+  background: linear-gradient(135deg, #2a4dbd, #6f86ff);
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: var(--transition);
+  box-shadow: 0 4px 10px rgba(111, 134, 255, 0.3);
+}
+
+.btn-details:hover {
+  transform: translateY(-2px) scale(1.04);
+  box-shadow: 0 6px 18px rgba(111, 134, 255, 0.45);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .model-image {
+    height: 220px;
+  }
+
+  .model-name {
+    font-size: 1rem;
+  }
+
+  .model-desc {
+    font-size: 0.9rem;
+  }
+}
+
+
+.model-card {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 0.6s ease forwards;
+}
+
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
