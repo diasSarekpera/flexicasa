@@ -166,4 +166,12 @@
   .social-links {
     justify-content: center;
   }
+
+  .footer-brand{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 }
