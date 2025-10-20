@@ -347,3 +347,144 @@
 		padding: 0.85rem 1.6rem;
 	}
 }
+
+
+/* ======================================================
+   HERO — RESPONSIVE REFINEMENT (MOBILE FIRST APPROACH)
+====================================================== */
+
+/* -------------------------
+   BASE MOBILE (par défaut)
+------------------------- */
+.hero {
+	padding: 1.2rem;
+	text-align: center;
+}
+.hero-header {
+	flex-wrap: wrap;
+	gap: 1rem;
+	padding: 1rem;
+	background: rgba(10, 10, 10, 0.4);
+	backdrop-filter: blur(6px);
+	border-radius: 0;
+}
+.hero-header .logo img {
+	width: 55px;
+}
+.hero-content {
+	padding: 3rem 1rem;
+	gap: 1.5rem;
+}
+.hero-title {
+	font-size: 2.6rem;
+	letter-spacing: 1.2px;
+}
+.slogan {
+	font-size: 1rem;
+	max-width: 90%;
+}
+.btn-cta {
+	padding: 0.8rem 1.6rem;
+	font-size: 0.95rem;
+}
+
+/* Nav desktop caché par défaut */
+.hero-nav,
+.btn-contact {
+	display: none;
+}
+
+/* Burger visible par défaut */
+.menu-burger {
+	display: flex;
+}
+
+/* Overlay menu plein écran sur mobile */
+.menu-overlay {
+	display: flex;
+	position: fixed;
+	inset: 0;
+	background: rgba(0, 0, 0, 0.92);
+	backdrop-filter: blur(12px);
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	transition: opacity 0.4s ease;
+}
+.menu-links a {
+	font-size: 1.4rem;
+	padding: 0.5rem 1rem;
+}
+
+/* -------------------------
+   TABLETTES (>= 600px)
+------------------------- */
+@media (min-width: 600px) {
+	.hero {
+		padding: 2rem;
+	}
+	.hero-title {
+		font-size: 3.5rem;
+	}
+	.slogan {
+		font-size: 1.1rem;
+	}
+	.btn-cta {
+		padding: 1rem 2rem;
+		font-size: 1rem;
+	}
+}
+
+/* -------------------------
+   TABLETTES GRANDES / LAPTOPS (>= 900px)
+------------------------- */
+@media (min-width: 900px) {
+	.hero {
+		padding: 2.5rem 3rem;
+	}
+	.hero-header {
+		flex-wrap: nowrap;
+		justify-content: space-between;
+		background: var(--glass-bg);
+		backdrop-filter: blur(var(--glass-blur));
+		border-radius: var(--radius-lg);
+		padding: 1rem 2rem;
+	}
+	/* Rétablir la nav et CTA */
+	.hero-nav {
+		display: block;
+	}
+	.btn-contact {
+		display: inline-block;
+	}
+	.menu-burger {
+		display: none;
+	}
+	.hero-title {
+		font-size: clamp(4rem, 5vw, 5.5rem);
+	}
+	.slogan {
+		font-size: 1.25rem;
+	}
+}
+
+/* -------------------------
+   DESKTOP LARGE (>= 1200px)
+------------------------- */
+@media (min-width: 1200px) {
+	.hero {
+		padding: 3rem 5rem;
+	}
+	.hero-title {
+		font-size: clamp(5rem, 6vw, 6.5rem);
+	}
+	.slogan {
+		font-size: 1.3rem;
+		max-width: 60ch;
+	}
+	.btn-cta {
+		padding: 1.2rem 2.6rem;
+		font-size: 1.05rem;
+	}
+}
+

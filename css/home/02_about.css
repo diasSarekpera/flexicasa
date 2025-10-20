@@ -277,3 +277,148 @@
     height: 54px;
   }
 }
+
+
+/* ======================================================
+   ABOUT — MOBILE FIRST RESPONSIVE REFINEMENT
+====================================================== */
+
+/* -------------------------
+   BASE MOBILE (par défaut)
+------------------------- */
+.about {
+	padding: 4rem 1.4rem;
+	background: linear-gradient(160deg, #f8faff 0%, #eef2ff 100%);
+	text-align: center;
+}
+.about-inner {
+	display: flex;
+	flex-direction: column;
+	gap: 2.8rem;
+	align-items: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+.about-media picture {
+	width: 100%;
+	border-radius: 1.4rem;
+	overflow: hidden;
+}
+.about-media img {
+	width: 100%;
+	height: auto;
+	display: block;
+	object-fit: cover;
+}
+.about-content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.8rem;
+}
+.about-header h2 {
+	font-size: 2rem;
+}
+.about-text {
+	font-size: 1rem;
+	line-height: 1.8;
+	text-align: justify;
+}
+.features-grid {
+	display: grid;
+	grid-template-columns: 1fr;
+	gap: 1.5rem;
+	width: 100%;
+}
+.feature-card {
+	padding: 1.8rem 1.4rem;
+	text-align: center;
+}
+.feature-card-icon {
+	width: 60px;
+	height: 60px;
+	font-size: 1.8rem;
+	margin: 0 auto 1rem;
+}
+
+/* -------------------------
+   TABLETTES (>= 600px)
+------------------------- */
+@media (min-width: 600px) {
+	.about {
+		padding: 5rem 2rem;
+	}
+	.about-header h2 {
+		font-size: 2.3rem;
+	}
+	.features-grid {
+		grid-template-columns: repeat(2, 1fr);
+		gap: 2rem;
+	}
+	.about-text {
+		font-size: 1.05rem;
+	}
+}
+
+/* -------------------------
+   TABLETTES GRANDES (>= 900px)
+------------------------- */
+@media (min-width: 900px) {
+	.about-inner {
+		display: grid;
+		grid-template-columns: 1.1fr 1fr;
+		align-items: center;
+		gap: 4rem;
+		text-align: left;
+	}
+	.about-content {
+		align-items: flex-start;
+	}
+	.about-header h2 {
+		font-size: clamp(2.5rem, 4vw, 3rem);
+	}
+	.about-header h2::after {
+		margin-left: 0;
+	}
+	.features-grid {
+		grid-template-columns: repeat(2, 1fr);
+	}
+	.feature-card {
+		text-align: left;
+		padding: 2.2rem 2rem;
+	}
+	.feature-card-icon {
+		margin: 0 0 1rem 0;
+	}
+}
+
+/* -------------------------
+   DESKTOP LARGE (>= 1200px)
+------------------------- */
+@media (min-width: 1200px) {
+	.about {
+		padding: 6rem 3rem;
+	}
+	.about-inner {
+		gap: 5rem;
+	}
+	.about-header h2 {
+		font-size: 3.2rem;
+	}
+	.about-text {
+		font-size: 1.1rem;
+		max-width: 650px;
+	}
+	.features-grid {
+		gap: 2.5rem;
+	}
+	.feature-card {
+		padding: 2.8rem 2.4rem;
+	}
+	.feature-card-icon {
+		width: 70px;
+		height: 70px;
+		font-size: 2rem;
+	}
+}
+
