@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<!-- META BÁSICA -->
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	
+		<!-- TÍTULO Y DESCRIPCIÓN -->
+		<title>FlexiCasa | Casas móviles modernas y confortables</title>
+		<meta name="description" content="FlexiCasa es su especialista en casas móviles modernas. Descubra hogares cómodos, elegantes y adaptados a su estilo de vida. Calidad, diseño y movilidad al mejor precio." />
+	
+		<!-- PALABRAS CLAVE (SEO) -->
+		<meta name="keywords" content="casas móviles, mobile home, vivienda móvil, casas prefa-brandsricadas, hogar moderno, casas transportables, FlexiCasa, vivienda flexible" />
+	
+		<!-- FAVICONS E ICONOS -->
+		<link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/favicon/apple-touch-icon.png" />
+		<link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon/favicon-32x32.png" />
+		<link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon/favicon-16x16.png" />
+		<link rel="manifest" href="./assets/icons/favicon/site.webmanifest" />
+		<link rel="shortcut icon" href="./assets/icons/favicon/favicon.ico" type="image/x-icon" />
+	
+		<!-- ENLACES CSS -->
+		<link rel="stylesheet" href="./css/home/main.css" />
+	
+		<!-- FONT AWESOME -->
+		<link
+		rel="stylesheet"
+		href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.5.0/css/all.min.css"
+	  />
+	  
+	  
+		<!-- FUENTES GOOGLE -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet" />
+		<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+	
+		<!-- OPEN GRAPH (COMPARTIR EN REDES SOCIALES) -->
+		<meta property="og:title" content="FlexiCasa - Casas móviles modernas y confortables" />
+		<meta property="og:description" content="Descubra nuestras casas móviles elegantes, adaptables y listas para vivir. Confort y estilo dondequiera que vaya." />
+		<meta property="og:image" content="./assets/images/logo/logo.png" />
+		<meta property="og:url" content="https://flexicasa.onrender.com" />
+		<meta property="og:type" content="website" />
+	
+		<!-- COLOR DEL NAVEGADOR (MÓVIL) -->
+		<meta name="theme-color" content="#1e1e1e" />
+	
+		<!-- INDEXACIÓN -->
+		<meta name="robots" content="index, follow" />
+	</head>
+	<body>
+		<!-- ===============================
+			SECCIÓN : Hero
+		================================ -->
+		<section class="hero" id="hero" role="banner" aria-label="Presentación de FlexiCasa">
+
+			<!-- ✅ Capas de fondo -->
+			<div class="hero-bg" aria-hidden="true">
+				<div class="bg-slide active"></div>
+				<div class="bg-slide"></div>
+			</div>
+
+			<!-- ===========================
+				ENCABEZADO PRINCIPAL
+			=========================== -->
+			<header class="hero-header">
+				<div class="logo">
+					<a href="/" aria-label="Página de inicio de FlexiCasa">
+						<img src="./assets/images/logo/logo.png" alt="Logo de FlexiCasa" width="120" decoding="async" loading="eager">
+					</a>
+				</div>
+
+				<nav class="hero-nav" aria-label="Navegación principal">
+					<ul>
+						<li><a href="/">Inicio</a></li>
+						<li><a href="#about">Sobre nosotros</a></li>
+						<li><a href="#models">Casas móviles</a></li>
+						<li><a href="#temoignages">Testimonios</a></li>
+					</ul>
+				</nav>
+
+				<a href="#contact" class="btn-contact" role="button">Contáctanos</a>
+
+				<button class="menu-burger" type="button" aria-label="Abrir el menú principal" aria-controls="menu-overlay" aria-expanded="false">
+					<span class="burger-line" aria-hidden="true"></span>
+					<span class="burger-line" aria-hidden="true"></span>
+					<span class="burger-line" aria-hidden="true"></span>
+				</button>
+			</header>
+
+			<!-- ===========================
+				CONTENIDO PRINCIPAL HERO
+			=========================== -->
+			<div class="hero-content">
+				<h1 class="hero-title">FlexiCasa</h1>
+				<p class="slogan">
+					Tu hogar fijo, con la libertad de moverte.
+				</p>
+				<a href="#models" class="btn-cta" role="button">Explora nuestras casas</a>
+			</div>
+
+			<!-- ===========================
+				MENÚ MÓVIL
+			=========================== -->
+			<nav id="menu-overlay" class="menu-overlay" aria-label="Menú móvil" aria-hidden="true">
+				<ul class="menu-links">
+					<li><a href="/">Inicio</a></li>
+					<li><a href="#about">Sobre nosotros</a></li>
+					<li><a href="#models">Casas móviles</a></li>
+					<li><a href="#temoignages">Testimonios</a></li>
+					<li><a href="#contact">Contáctanos</a></li>
+				</ul>
+			</nav>
+		</section>
+
+
+		<!-- ===============================
+			SECCIÓN : ¿Quiénes somos?
+		================================ -->
+		<section id="about" class="section about reveal" aria-labelledby="about-title">
+			<div class="container about-inner">
+
+				<!-- Columna izquierda : imagen -->
+				<div class="about-media">
+					<picture>
+						<img 
+							src="./assets/images/02-about/im.jpg" 
+							alt="Vista exterior de una casa móvil FlexiCasa" 
+							loading="lazy" 
+							decoding="async" 
+							width="600" 
+							height="400">
+					</picture>
+				</div>
+			
+				<!-- Columna derecha : texto + cuadrícula de ventajas -->
+				<div class="about-content">
+					<!-- Título -->
+					<div class="about-header">
+						<h2 id="about-title" class="section-title">¿Quiénes somos?</h2>
+					</div>
+			
+					<!-- Párrafo de introducción -->
+					<p class="about-text">
+						En <strong>FlexiCasa</strong> combinamos diseño moderno, confort y libertad de movimiento. 
+						Nos especializamos en casas móviles elegantes y funcionales, pensadas para adaptarse a tu estilo de vida. <br>
+						Nuestra misión: ofrecer hogares móviles de alta calidad, que sean cómodos, duraderos y fáciles de instalar, 
+						permitiéndote vivir donde quieras sin renunciar al confort.
+					</p>
+
+					<!-- Cuadrícula de ventajas -->
+					<ul class="features-grid reveal-stagger" role="list" aria-label="Ventajas de FlexiCasa">
+					
+						<li class="feature-card card">
+							<div class="feature-card-icon" aria-hidden="true">
+								<i class="fa-solid fa-house" aria-hidden="true"></i>
+							</div>
+							<p class="feature-card-desc">
+								Casas móviles listas para habitar, con diseño moderno y funcional.
+							</p>
+						</li>
+						
+						<li class="feature-card card">
+							<div class="feature-card-icon" aria-hidden="true">
+								<i class="fa-solid fa-gem" aria-hidden="true"></i>
+							</div>
+							<p class="feature-card-desc">
+								Alta calidad, durabilidad y acabados premium en cada vivienda.
+							</p>
+						</li>
+						
+						<li class="feature-card card">
+							<div class="feature-card-icon" aria-hidden="true">
+								<i class="fa-solid fa-truck-fast" aria-hidden="true"></i>
+							</div>
+							<p class="feature-card-desc">
+								Entrega rápida y soporte completo hasta la instalación.
+							</p>
+						</li>
+						
+						<li class="feature-card card">
+							<div class="feature-card-icon" aria-hidden="true">
+								<i class="fa-solid fa-hand-holding-heart" aria-hidden="true"></i>
+							</div>
+							<p class="feature-card-desc">
+								Acompañamiento personalizado para que tu experiencia sea sencilla y satisfactoria.
+							</p>
+						</li>						
+					
+					</ul>
+				</div>
+			</div>
+		</section>
+
+
+		<!-- ===============================
+			SECTION : Nos modèles
+		================================ -->
+		<section id="models" class="models-section reveal" aria-labelledby="models-title">
+			<div class="container">
+				<div class="models-header">
+					<h2 id="models-title" class="section-title">
+						<i class="fa-solid fa-home"></i> NUESTRAS CASAS MÓVILES
+					</h2>
+				</div>
+
+				<!-- ================================================== -->
+				<!-- ============== CASAS MÓVILES ============== -->
+				<!-- ================================================== -->
+				<article class="model-category">
+					<div class="models-grid reveal-stagger">
+
+						<!-- Tarjeta 1 -->
+						<div class="model-card card">
+							<div class="badge">
+								Precio fijo
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/AB75D275-1283-4CB0-B800-89E85338C3C2-510x340.webp" alt="Casa móvil moderna sobre ruedas Kalip 70" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil T2 AFFO - Confort y Estilo en 35 m²</h4>
+								<p class="model-desc">Diseño moderno con cocina equipada y acabados premium. Perfecta para quienes buscan comodidad y elegancia en un espacio funcional.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">8.150,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/1.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 2 -->
+						<div class="model-card card">
+							<div class="badge">
+								-43%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/39F4FF4D-0DD3-47EA-88EE-O-1-510x383.webp" alt="Casa móvil moderna sobre ruedas Firefly" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil T0 Firefly - Compacta y Acogedora</h4>
+								<p class="model-desc">Modelo compacto de 32 m² con todo lo necesario para una vida práctica. Ideal para parejas o como casa de vacaciones.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">3.500,00&nbsp;€</span>
+										<span class="current-price">1.980,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/2.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 3 -->
+						<div class="model-card card">
+							<div class="badge">
+								-36%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/cass_1024x1024-768x576-1-510x383.webp" alt="Casa móvil moderna de 3 habitaciones" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil T3 - Espacio y Confort Familiar</h4>
+								<p class="model-desc">Amplia casa de 46 m² con tres habitaciones, cocina equipada y acabados elegantes. Ideal para familias que buscan confort y estilo.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">6.200,00&nbsp;€</span>
+										<span class="current-price">3.960,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/3.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 4 -->
+						<div class="model-card card">
+							<div class="badge">
+								Precio fijo
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/5DABF4FB-E073-448D-8151-F337F6110EC7-510x422.webp" alt="Casa móvil moderna Fina T2" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil Fina T2 - Confort y Elegancia</h4>
+								<p class="model-desc">Modelo de 47,3 m² con dos habitaciones, cocina equipada y baño moderno. Perfecta para disfrutar de comodidad y luminosidad durante todo el año.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">7.820,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/4.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 5 -->
+						<div class="model-card card">
+							<div class="badge">
+								Precio fijo
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/D6C708E7-D071-4567-9257-0D425DFFEF82-2-510x340.webp" alt="Casa móvil moderna ZUMA T2" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil ZUMA T2 - Estilo y Confort en 35 m²</h4>
+								<p class="model-desc">Espacio moderno con cocina completa y calefacción central. Un diseño funcional que combina estilo y bienestar.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">8.250,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/5.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 6 -->
+						<div class="model-card card">
+							<div class="badge">
+								-36%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/1-18-510x383.webp" alt="Casa móvil profesional de 4 habitaciones" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil Pro - 4 Habitaciones y 57 m²</h4>
+								<p class="model-desc">Amplia y resistente, ideal como vivienda de personal o residencia familiar. Incluye dos baños y estructura de acero duradera.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">13.000,00&nbsp;€</span>
+										<span class="current-price">11.900,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/6.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 7 -->
+						<div class="model-card card">
+							<div class="badge">
+								Precio fijo
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/37e3c5_23f6e58cec4443d6b45a81c4f585f9d2_mv2_1024x1024.webp" alt="Casa móvil familiar modelo A" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil Modelo A - Espacio Familiar Personalizable</h4>
+								<p class="model-desc">Entre 37 y 42 m² con 2 o 3 habitaciones, salón luminoso y baño completo. Un modelo versátil que combina confort, movilidad y estilo propio.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">7.100,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/7.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 8 -->
+						<div class="model-card card">
+							<div class="badge">
+								-17%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/CASER-510x340.webp" alt="Casa móvil moderna de 2 habitaciones" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil 2 Habitaciones - Confort Moderno</h4>
+								<p class="model-desc">Modelo de 36 m² con calefacción central, cocina equipada y baño elegante. Perfecta para familias que buscan bienestar y diseño.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">12.500,00&nbsp;€</span>
+										<span class="current-price">10.350,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/8.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 9 -->
+						<div class="model-card card">
+							<div class="badge">
+								-14%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/BE117FA0-2498-44B3-894D-014B58845050_720x-510x381.webp" alt="Casa móvil moderna IRM Hampton Residencial" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil IRM Hampton - Confort y Estilo Residencial</h4>
+								<p class="model-desc">Espaciosa casa de 40 m² con 3 dormitorios, cocina completa e aislamiento reforzado. Ideal como vivienda principal o casa de vacaciones premium.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">10.000,00&nbsp;€</span>
+										<span class="current-price">8.599,00€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/9.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+						
+						<!-- Tarjeta 10 -->
+						<div class="model-card card">
+							<div class="badge">
+								-28%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/E44873EA-AF96-4591-B0FC-F45512C5597B_720x-510x383.webp" alt="Casa móvil residencial T2 Express" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil Residencial T2 Express - Espacio y Confort</h4>
+								<p class="model-desc">Modelo de 44 m² con dos dormitorios, cocina equipada y baño elegante. Aislamiento reforzado y calefacción central para un confort total todo el año.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">6.800,00&nbsp;€</span>
+										<span class="current-price">4.899,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/10.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 11 -->
+						<div class="model-card card">
+							<div class="badge">
+								Precio fijo
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/d48cf7ca-5f0f-4025-9129-82a1316602a9-1-600x600_1024x1024-510x510.webp" alt="Contenedor vivienda T2 moderno" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Contenedor Vivienda T2 - Aislamiento y Eficiencia</h4>
+								<p class="model-desc">Módulo de 48 m² con doble acristalamiento, aislamiento de lana de roca y aire acondicionado reversible. Un espacio moderno, cómodo y eficiente todo el año.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">12.819,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/11.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 12 -->
+						<div class="model-card card">
+							<div class="badge">
+								-55%
+							</div>
+							<img src="https://casafabricada.es/wp-content/uploads/2025/03/20230322143028-680400_grande_1_1024x1024-510x383.webp" alt="Cabina modular de 1 dormitorio compacta y funcional" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Cabina Modular 1 Dormitorio - Compacta y Funcional</h4>
+								<p class="model-desc">Módulo de 24 m² con cocina equipada, baño completo e iluminación natural. Ideal para espacios pequeños con máximo confort.</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">5.600,00&nbsp;€</span>
+										<span class="current-price">2.500,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/12.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 13 -->
+						<div class="model-card card">
+							<div class="badge">Oferta especial</div>
+							<img src="https://img.kleinanzeigen.de/api/v1/prod-ads/images/92/92613995-73f7-4392-8432-f2740be08fc9?rule=$_59.AUTO" alt="Casa modular Texel moderna y eficiente en energía" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Modular Texel - Eficiencia Energética y Confort</h4>
+								<p class="model-desc">
+									Casa modular totalmente equipada y eficiente en energía, ideal para vivir todo el año. 
+									Incluye cocina moderna, baño de calidad, aire acondicionado y mobiliario completo.
+								</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="old-price">76.330,00&nbsp;€</span>
+										<span class="current-price">30.532,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/13.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<!-- Tarjeta 14 -->
+						<div class="model-card card">
+							<div class="badge">Nuevo modelo premium</div>
+							<img src="https://kcmodularbuildings.co.uk/wp-content/uploads/2025/03/kccabinssolutions-kcmodularbuildings-low_res-2.jpg" alt="Texel Deluxe Mobile Home - Vivienda móvil de lujo" class="model-image">
+							<div class="card-info">
+								<h4 class="model-name">Casa Móvil Texel Deluxe - Lujo y Eficiencia</h4>
+								<p class="model-desc">
+									Vivienda móvil de lujo con diseño moderno, materiales premium y eficiencia energética “A”. 
+									Totalmente equipada con cocina, baño elegante y salón abierto para máximo confort.
+								</p>
+								<div class="model-footer">
+									<p class="model-price">
+										<span class="current-price">82.500,00&nbsp;€</span>
+									</p>
+									<a href="./pages/category/01-mobile-home/14.html" target="_blank" class="btn-details" aria-label="Ver detalles del producto">
+										Detalles
+									</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</article>
+
+			</div>
+		</section>
+
+		<!-- ===============================
+			SECTION : Témoignages
+		=============================== -->
+		<section class="testimonials-section reveal" id="temoignages">
+			<div class="testimonials-container">
+		
+				<!-- Titre -->
+				<div class="testimonials-title-container fade-item">
+					<h2 class="testimonials-title section-title">Testimonios</h2>
+				</div>
+		
+				<!-- Slider -->
+				<div class="testimonials-slider fade-item">
+			
+					<div class="testimonial-card active">
+						<div class="testimonial-avatar">
+							<img src="./assets/images/testimonials/carlos.jpg" alt="Carlos Mendez">
+						</div>
+						<div class="testimonial-content">
+							<p class="testimonial-text">
+								“La casa móvil que compré superó mis expectativas. Espaciosa, moderna y lista para vivir desde el primer día.”
+							</p>
+							<h4 class="testimonial-name">Carlos Mendez</h4>
+							<span class="testimonial-role">Arquitecto</span>
+						</div>
+					</div>
+			
+					<div class="testimonial-card">
+						<div class="testimonial-avatar">
+							<img src="./assets/images/testimonials/lucia.jpg" alt="Lucía Herrera">
+						</div>
+						<div class="testimonial-content">
+							<p class="testimonial-text">
+								“Gracias a FlexiCasa, encontramos una solución práctica y elegante para nuestro alojamiento vacacional.”
+							</p>
+							<h4 class="testimonial-name">Lucía Herrera</h4>
+							<span class="testimonial-role">Gerente de hotel rural</span>
+						</div>
+					</div>
+			
+					<div class="testimonial-card">
+						<div class="testimonial-avatar">
+							<img src="./assets/images/testimonials/miguel.jpg" alt="Miguel Álvarez">
+						</div>
+						<div class="testimonial-content">
+							<p class="testimonial-text">
+								“Excelente servicio y atención personalizada. FlexiCasa realmente entiende lo que significa comodidad móvil.”
+							</p>
+							<h4 class="testimonial-name">Miguel Álvarez</h4>
+							<span class="testimonial-role">Ingeniero civil</span>
+						</div>
+					</div>
+			
+					<div class="testimonial-card">
+						<div class="testimonial-avatar">
+							<img src="./assets/images/testimonials/isabella.jpg" alt="Isabella Cruz">
+						</div>
+						<div class="testimonial-content">
+							<p class="testimonial-text">
+								“Nuestra casa móvil combina diseño, funcionalidad y calidad. ¡Una experiencia de compra increíble!”
+							</p>
+							<h4 class="testimonial-name">Isabella Cruz</h4>
+							<span class="testimonial-role">Diseñadora de interiores</span>
+						</div>
+					</div>
+			
+					<div class="testimonial-card">
+						<div class="testimonial-avatar">
+							<img src="./assets/images/testimonials/javier.jpg" alt="Javier Torres">
+						</div>
+						<div class="testimonial-content">
+							<p class="testimonial-text">
+								“Una inversión inteligente y sostenible. Nuestra familia disfruta de la libertad de vivir donde queremos.”
+							</p>
+							<h4 class="testimonial-name">Javier Torres</h4>
+							<span class="testimonial-role">Empresario</span>
+						</div>
+					</div>
+			
+					<!-- Flèches -->
+					<button class="testimonial-nav prev" aria-label="Testimonio anterior">&#10094;</button>
+					<button class="testimonial-nav next" aria-label="Siguiente testimonio">&#10095;</button>
+				</div>
+			</div>
+		</section>
+  
+  
+		<!-- ==================
+			SECTION CONTACTO
+		================== -->
+		<section class="contact-section reveal" id="contact">
+			<div class="container">
+				<!-- Título principal -->
+				<header class="section-header fade-item">
+					<h2 class="contact-title">
+						¡Contáctanos!
+					</h2>
+				</header>
+
+				<!-- Información de contacto -->
+				<div class="contact-info reveal-stagger">
+					<div class="info-card fade-item card">
+						<i class="fas fa-map-marker-alt"></i>
+						<h3>Dirección</h3>
+						<p>Madrid, España</p>
+					</div>
+
+					<div class="info-card fade-item card">
+						<i class="fa-brands fa-whatsapp"></i>
+						<h3>WhatsApp</h3>
+						<p>+34 xxxxxxxxxx</p>
+					</div>
+
+					<div class="info-card fade-item card">
+						<i class="fas fa-envelope"></i>
+						<h3>Correo electrónico</h3>
+						<p>contact@flexicasa.com</p>
+					</div>
+				</div>
+
+				<!-- Formulario de contacto -->
+				<form action="#" method="post" class="contact-form fade-item">
+					<div class="form-group">
+						<label for="name"><i class="fas fa-user"></i></label>
+						<input type="text" id="name" name="name" placeholder="Tu nombre completo" required />
+					</div>
+
+					<div class="form-group">
+						<label for="email"><i class="fas fa-at"></i></label>
+						<input type="email" id="email" name="email" placeholder="Tu dirección de correo electrónico" required />
+					</div>
+
+					<div class="form-group">
+						<label for="message"><i class="fas fa-pen"></i></label>
+						<textarea id="message" name="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+					</div>
+
+					<button type="submit" class="btn-submit">
+						<i class="fas fa-paper-plane"></i> Enviar mensaje
+					</button>
+				</form>
+			</div>
+		</section>
+
+		<!-- ===============================
+			SECTION PRÉFOOTER CTA — FLEXICASA
+		=============================== -->
+		<section class="prefooter-cta">
+			<div class="cta-container">
+			
+			<div class="cta-icon">
+				<i class="fa-brands fa-whatsapp"></i>
+			</div>
+		
+			<div class="cta-content">
+				<h2>Vive la experiencia FlexiCasa.</h2>
+				<p>
+				Descubre cómo una casa móvil puede transformar tu estilo de vida. 
+				Solicita ahora tu presupuesto personalizado y recibe asesoramiento gratuito de nuestros expertos.
+				</p>
+			</div>
+		
+			<a href="https://wa.me/33600000000" class="cta-btn" target="_blank" rel="noopener">
+				Hablar con un asesor
+				<i class="fa-solid fa-arrow-right"></i>
+			</a>
+		
+			</div>
+		</section>
+  
+		<!-- ===============================
+			FOOTER FLEXICASA — CASAS MÓVILES DE LUJO
+		=============================== -->
+		<footer class="footer">
+			<div class="footer-overlay"></div>
+		
+			<div class="footer-container">
+			
+			<!-- Logo + Descripción -->
+			<div class="footer-brand">
+				<div class="logo">
+					<img src="./assets/images/logo/logo.png" alt="Logotipo de FlexiCasa">
+					<h2>FlexiCasa</h2>
+				</div>
+				<p>
+					En <strong>FlexiCasa</strong>, diseñamos y construimos casas móviles modernas, 
+					cómodas y sostenibles. Nuestro compromiso es ofrecerte la libertad de vivir donde quieras, 
+					sin renunciar al estilo ni a la calidad.
+				</p>
+				<div class="social-links">
+					<a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+					<a href="#"><i class="fa-brands fa-instagram"></i></a>
+					<a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+					<a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+				</div>
+			</div>
+		
+			<!-- Enlaces rápidos -->
+			<div class="footer-links">
+				<h3>Enlaces rápidos</h3>
+				<ul>
+					<li><a href="#">Inicio</a></li>
+					<li><a href="#">Modelos</a></li>
+					<li><a href="#">Sobre nosotros</a></li>
+					<li><a href="#">Contacto</a></li>
+				</ul>
+			</div>
+		
+			<!-- Contacto -->
+			<div class="footer-contact">
+				<h3>Contacto</h3>
+				<ul>
+					<li><i class="fa-solid fa-location-dot"></i> Madrid, España</li>
+					<li><i class="fa-solid fa-envelope"></i> contacto@flexicasa.com</li>
+					<li><i class="fa-brands fa-whatsapp"></i> +34 xxx xxx xxx</li>
+				</ul>
+			</div>
+		
+			</div>
+		
+			<!-- Parte inferior del pie de página -->
+			<div class="footer-bottom">
+				<p>&copy; 2025 <strong>FlexiCasa</strong>. Todos los derechos reservados.</p>
+			</div>
+		</footer>
+  		
+		<!-- Bouton WhatsApp -->
+		<a href="https://wa.me/229XXXXXXXX" 
+		class="whatsapp-float" 
+		target="_blank" 
+		aria-label="Contactez-nous sur WhatsApp">
+		<i class="fa-brands fa-whatsapp"></i>
+		</a>
+
+		<!-- Scripts-->
+		<script src="./js/home/burger.js"></script>
+		<script src="./js/home/fade-bg.js"></script>
+		<script src="./js/home/slider.js"></script>
+		<script src="./js/home/reveal-section.js"></script>
+		<script src="./js/home/reveal-stagger.js"></script>
+	</body>
+</html>
+
+
+
+
+
+
+
+
+
+

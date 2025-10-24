@@ -1,0 +1,501 @@
+/* ===============================
+   PAGE PRODUIT - FLEXICASA
+   Style premium, sobre et responsive
+=============================== */
+
+/* Structure principale */
+.product-page {
+  max-width: 1200px;
+  margin: 100px auto 60px;
+  padding: 0 1.5rem;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+  font-family: 'Inter', sans-serif;
+  color: #222;
+}
+
+/* ===============================
+   GALERIE PRODUIT
+=============================== */
+.product-gallery {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* Image principale */
+.main-visual {
+  width: 100%;
+  background: #f8f8f8;
+  border-radius: 1rem;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.05);
+}
+
+.main-visual img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.main-visual img.fade-out {
+  opacity: 0;
+  transform: scale(1.03);
+}
+.main-visual img.fade-in {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Thumbnails */
+.thumbnail-area {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.thumb-nav {
+  background: white;
+  border: 1px solid #ddd;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s ease;
+}
+.thumb-nav:hover {
+  background: #f6f6f6;
+}
+.thumb-nav[hidden] {
+  display: none;
+}
+
+.thumbnails-wrapper {
+  overflow: hidden;
+  flex: 1;
+}
+
+.thumbnails {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 6px 0;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.thumbnails::-webkit-scrollbar {
+  height: 6px;
+}
+.thumbnails::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.12);
+  border-radius: 8px;
+}
+
+.thumb-item {
+  flex: 0 0 auto;
+}
+.thumb-btn {
+  border: 2px solid transparent;
+  border-radius: 8px;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  padding: 2px;
+}
+.thumb-btn img {
+  width: 120px;
+  height: 76px;
+  border-radius: 6px;
+  object-fit: cover;
+  display: block;
+}
+.thumb-btn:hover {
+  transform: translateY(-2px);
+}
+.thumb-btn.active {
+  border-color: #b8902d;
+  box-shadow: 0 4px 14px rgba(184, 144, 45, 0.25);
+}
+
+/* ===============================
+   INFO PRODUIT
+=============================== */
+.product-info {
+  background: #fff;
+  border-radius: 1.5rem;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.05);
+  padding: 2.5rem;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Titre + prix */
+#product-title {
+  font-family: "Marcellus", serif;
+  font-size: clamp(1.8rem, 3vw, 2.6rem);
+  color: #111;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+.price {
+  text-align: center;
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #b8902d;
+  margin-bottom: 2rem;
+}
+
+/* Description */
+.product-description h2 {
+  font-family: "Marcellus", serif;
+  font-size: 1.6rem;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.product-description p {
+  line-height: 1.8;
+  color: #444;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+}
+
+.product-description h3 {
+  color: #b8902d;
+  font-size: 1.3rem;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Liste des caractéristiques */
+.product-description ul {
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 2rem;
+}
+.product-description ul li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.7rem;
+}
+.product-description ul li::before {
+  content: "✔";
+  position: absolute;
+  left: 0;
+  color: #b8902d;
+  font-weight: bold;
+}
+
+/* Bouton CTA */
+.cta {
+  display: inline-block;
+  background: linear-gradient(135deg, #e6c04f, #b8902d);
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 5px 20px rgba(212, 175, 55, 0.3);
+}
+.cta:hover {
+  transform: translateY(-2px);
+  background: linear-gradient(135deg, #f0d26e, #c39a2b);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+/* ===============================
+   RESPONSIVE DESIGN
+=============================== */
+@media (min-width: 980px) {
+  .product-page {
+    grid-template-columns: 1.2fr 0.9fr;
+    align-items: start;
+  }
+
+  .product-gallery {
+    order: 1;
+  }
+
+  .product-info {
+    order: 2;
+    position: sticky;
+    top: 100px;
+  }
+
+  .main-visual {
+    min-height: 440px;
+  }
+
+  .thumb-btn img {
+    width: 140px;
+    height: 88px;
+  }
+}
+
+@media (max-width: 768px) {
+  .product-info {
+    padding: 1.5rem;
+  }
+  #product-title {
+    font-size: 1.8rem;
+  }
+  .product-description p {
+    font-size: 0.95rem;
+  }
+}
+
+
+.old-price {
+  color: #a1a1aa;
+  text-decoration: line-through;
+  margin-right: 0.4rem;
+}
+
+/* ==========================================================
+   🔧 RESPONSIVE GÉNÉRAL — FLEXICASA (OPTIMISÉ POUR MOBILE)
+   Corrige les débordements et aligne les sections proprement
+========================================================== */
+
+/* Empêcher tout débordement horizontal */
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+/* ===============================
+   📱 PETITS ÉCRANS (max 480px)
+=============================== */
+@media (max-width: 480px) {
+
+  /* ---- ESPACEMENTS GÉNÉRAUX ---- */
+  .product-page {
+    margin-top: 80px;
+    padding: 0 1rem;
+    gap: 1.5rem;
+  }
+
+  /* ---- HEADER ---- */
+  .hero-header {
+    padding: 0.8rem 1rem;
+  }
+  .hero-header .logo img {
+    height: 42px;
+  }
+
+  /* ---- GALERIE PRODUIT ---- */
+  .main-visual img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  .thumbnails {
+    gap: 8px;
+  }
+  .thumb-btn img {
+    width: 90px;
+    height: 60px;
+  }
+
+  /* ---- INFO PRODUIT ---- */
+  .product-info {
+    padding: 1.4rem;
+    border-radius: 14px;
+  }
+
+  #product-title {
+    font-size: 1.5rem;
+    line-height: 1.2;
+  }
+
+  .price {
+    font-size: 1.2rem;
+    flex-direction: column;
+    gap: 0.3rem;
+  }
+
+  .product-description p {
+    font-size: 0.9rem;
+    line-height: 1.6;
+  }
+
+  .product-description ul li {
+    font-size: 0.9rem;
+  }
+
+  .cta {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 0.95rem;
+    border-radius: 30px;
+  }
+
+  /* ---- FOOTER ---- */
+  .footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .footer-brand img {
+    height: 50px;
+    margin-bottom: 0.5rem;
+  }
+
+  .footer-links ul,
+  .footer-contact ul {
+    text-align: center;
+    padding: 0;
+  }
+
+  .footer-bottom p {
+    font-size: 0.85rem;
+    text-align: center;
+    padding: 1rem;
+  }
+
+  /* ---- BOUTON WHATSAPP ---- */
+  .whatsapp-float {
+    bottom: 16px;
+    right: 16px;
+    width: 52px;
+    height: 52px;
+    font-size: 24px;
+  }
+}
+
+
+/* ===============================
+   📲 ÉCRANS MOYENS (481px - 768px)
+=============================== */
+@media (max-width: 768px) {
+
+  /* HEADER */
+  .hero-header {
+    padding: 1rem;
+  }
+  .hero-nav ul {
+    display: none;
+  }
+
+  /* PAGE PRODUIT */
+  .product-page {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    margin-top: 6rem;
+  }
+
+  .product-info {
+    margin: 0;
+    padding: 2rem 1.5rem;
+  }
+
+  .main-visual {
+    min-height: auto;
+  }
+
+  .thumbnails {
+    justify-content: flex-start;
+    overflow-x: auto;
+  }
+
+  /* FOOTER */
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .footer-brand, .footer-links, .footer-contact {
+    text-align: center;
+  }
+
+  .footer-contact ul li {
+    justify-content: center;
+  }
+
+  /* MENU BURGER */
+  .menu-overlay .menu-links a {
+    font-size: 1.2rem;
+  }
+
+  .btn-contact {
+    display: none;
+  }
+}
+
+
+/* ===============================
+   💻 ÉCRANS GRANDS (769px - 1200px)
+=============================== */
+@media (max-width: 1200px) {
+
+  .product-page {
+    padding: 0 2rem;
+  }
+
+  .product-info {
+    padding: 2.5rem;
+  }
+
+  .footer-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+  }
+}
+
+
+/* ===============================
+   🖥️ ÉCRANS XXL (1200px+)
+=============================== */
+@media (min-width: 1200px) {
+  .product-page {
+    max-width: 1100px;
+    margin: 120px auto 100px;
+  }
+}
+
+/* ===============================
+   ⚙️ FIX VISUELS SUPPLÉMENTAIRES
+=============================== */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+ul {
+  padding-left: 0;
+  list-style-position: inside;
+}
+
+button, a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+section, div, footer {
+  box-sizing: border-box;
+}
+
+
+.thumbnails.dragging {
+  cursor: grabbing;
+  scroll-behavior: auto; /* désactive le smooth scroll pendant le drag */
+}
+
+
