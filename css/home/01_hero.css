@@ -489,23 +489,8 @@
 }
 
 @media (max-width: 768px) {
-	/* =========================
-		HEADER
-	========================= */
+
 	.hero-header {
-		position: relative;
-		z-index: 10000;
-		display: flex;
-		align-items: center;
-		justify-content: space-between;
-		width: 100%;
-		max-width: var(--max-width);
-		margin: 0 auto;
-		padding: 1rem 2rem;
-		border-radius: var(--radius-lg);
-		background: var(--glass-bg);
-		backdrop-filter: blur(var(--glass-blur));
-		box-shadow: none;
 		border: none;
 	}
 }
